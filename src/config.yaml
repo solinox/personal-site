@@ -1,0 +1,97 @@
+baseURL: https://abosch.dev
+languageCode: en-us
+title: Andrew Bosch
+theme: hugo-refresh
+# theme: ../..
+
+
+disableKinds: ["sitemap","RSS"]
+
+blackfriday:
+  hrefTargetBlank: true
+
+# Supported fonts are:
+# https://fonts.google.com/
+
+# Icons taken from:
+# https://konpa.github.io/devicon/
+# https://bulkitv2.cssninja.io/_components-icons-fa.html
+
+params:
+  # parameter used to specify if you want to minify the imported js
+  jsMinify: true
+  # parameter used to specify if you want to add the fingerprint to the imported js
+  jsFingerprint: false
+  # parameter used to specify if you want to minify the imported css
+  cssMinify: true
+  # parameter used to specify if you want to add the fingerprint to the imported css
+  cssFingerprint: true
+  # option to specify the main colour of the theme
+  mainColour: "#F39200"
+
+  # summary options
+  summary:
+    # option to specify the default image in the summary list
+    defaultImage : "/images/default_summary.jpg"
+  
+  # loading options
+  loading:
+    # option to specify the loading image
+    image: "/images/loaders/rings.svg"
+
+  # main pages options
+  mainPage:
+    # option to specify the main font of the theme
+    fontFamily: "Open Sans" 
+
+  # sidebar options
+  sidebar:
+    # option to specify the logo of the sidebar
+    logo: "/images/refresh-square.svg"
+    # option to specify the font of the sidebar
+    fontFamily: "Open Sans" # "Open Sans"
+
+  # navbar options
+  navbar:
+    # option to specify the logo of the sidebar
+    fontFamily: "Open Sans"
+  
+  # 404 page options
+  pagNotFound:
+    # option to specify the main picture of the sidebar
+    image: "/images/avataaars_404.png"
+    # option to specify the title of the 404 page
+    title: 404 Page Not Found :(
+    # option to specify the subtitle of the 404 page
+    subtitle: This is not the page you were looking for...
+    # option to specify the width of the image in the 404 page
+    imageWidth: 500px
+
+  # homepage options
+  homepage:
+    # option to specify the title in the homepage
+    title: Andrew Bosch
+    # option to specify the subtitle in the homepage
+    subtitle: Developer
+    # option to specify image in the homepage
+    image: "/images/favicon.png"
+    # option to specify the width of the image in the homepage
+    imageWidth: 500px
+    showInMenu: true
+
+  # footer options
+  footer:
+    # option to specify the logo in the footer
+    logo: "/images/refresh-square.svg"
+    # option to specify your contact email in the footer
+    email: abosch.dev@gmail.com
+    # option to specify your linkedin profile in the footer
+    linkedin: https://www.linkedin.com/in/andrew-bosch-56691090
+    # option to specify your github account in the footer; **uncomment** the below line to show in footer
+    github: solinox
+    # option to specify your twitter username in the footer; **uncomment** the below line to show in footer
+    # twitter: username
+    # option to specify your instagram username in the footer; **uncomment** the below line to show in footer
+    # instagram: username
+    # option to specify the copyright in the footer
+    copyright: Andrew Bosch - 2019

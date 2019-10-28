@@ -1,0 +1,26 @@
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns">
+        <div class="column is-centered-tablet-portrait">
+            <h1 class="title section-title">Projects</h1>
+            <div class="divider"></div>
+            <div class="section is-medium">
+            <div class="container">
+            {{- $pagesEachRow := 3 -}}
+                <div class="columns">
+                {{range $index, $element := (where .Site.RegularPages "Section" "projects").ByDate.Reverse }}
+                    {{- if eq (mod $index $pagesEachRow) 0 -}}
+                        </div>
+                        <div class="columns">
+                    {{- end -}}
+                    {{- partial "single/summary.html" . -}}
+                {{ end }}
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
